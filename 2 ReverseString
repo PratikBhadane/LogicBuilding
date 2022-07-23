@@ -1,0 +1,20 @@
+def reverseWord(s):
+    #your code here
+    
+    reverse_string=""
+    count=len(s)
+    while(count>0):
+        reverse_string=reverse_string+s[count-1]
+        count=count-1
+    
+    return reverse_string
+    
+    
+if __name__=="__main__":
+    t=int(input())
+    while(t>0):
+      s=input()
+      print(reverseWord(s))
+      t=t-1
+    
+    
